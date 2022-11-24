@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="sub-hero">
+        <nav>
+            <img src="img/My project.png" class="logo">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="cart.html">ORDER</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="content-2">
+            <h1>About Rex</h1>
+            <p>Rex is the name of our beloved mini robot.</p>
+        </div>
+
+        <div class="row">
+            <div class="about-col">
+                <h3>Alarm Sytem</h3>
+                <p>Rex has a built in clock that provides eveything your normal phone have but in a more fun way. </p>
+            </div>
+            <div class="about-col">
+                <h3>Recognition</h3>
+                <p>Rex can recognize you base on your voice and face and can recognize a multile person if you registered them on rex.</p>
+            </div>
+            <div class="about-col">
+                <h3>Emotion</h3>
+                <p>Rex has multiple emotion that he can show.For example, excitement,sadness and uneasiness. This show that rex can ba a awesome companion and can be your pet that requires minimal attention.</p>
+            </div>
+            <div class="about-col">
+                <h3>Battery life</h3>
+                <p>Rex has a battery life of 2days without charging and if not disturb or not in use, rex will go on sleep mode and will conserve more battery life.</p>
+
+            </div>
+        </div>
+
+        <script>
+            var navLinks = document.getElementById("navLinks")
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </section>
+
+
+
+</body>
+
+</html>

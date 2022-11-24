@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+</head>
+
+<body>
+    <section class="contact">
+
+
+        <nav>
+            <img src="img/My project.png" class="logo">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="cart.html">ORDER</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+       <div class="contact-info"> 
+        <h1>Connect with us</h1>
+        <div class="Contact">
+            <div><i class="fas fa-map-marker-alt"></i>Quezon,Bestlink</div>
+            <div><i class="fas fa-envelope"></i>rexinfo120@gmail.com</div>
+            <div><i class="fas fa-phone"></i>+63 000 555 9871</div>
+        </div>
+        <div class="border"></div>
+        <form class="contact-form" action="index.html" method="post">
+            <input type="text" class="contact-form-text" placeholder="Name">
+            <input type="email" class="contact-form-text" placeholder="Email">
+            <input type="number" class="contact-form-text" placeholder="Contact Number">
+            <textarea class="contact-form-text" placeholder="Your Message"></textarea>
+            <input type="submit" class="contact-form-btn" value="send">
+        </form>
+       </div>
+
+
+        <script>
+            var navLinks = document.getElementById("navLinks")
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </section>
+
+
+
+
+</body>
+
+</html>
